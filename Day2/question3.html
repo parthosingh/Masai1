@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+  function createBankAccount(credit){
+    let balance = credit
+    return {
+        deposit: function(amount){
+        return balance= amount + balance
+        },
+        withdraw: function(amount){
+            return balance= balance-amount
+        },
+        getBalance: function(){
+            return balance
+        }
+    }
+  }
+  const account = createBankAccount(100);
+
+  console.log(account.deposit(50)); 
+
+  console.log(account.withdraw(30)); 
+
+  console.log(account.getBalance()); 
+</script>
+</body>
+</html>
