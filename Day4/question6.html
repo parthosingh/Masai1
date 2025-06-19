@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+<script>
+    function fetchuserData(cb){
+           console.log("fetching user data...")
+           setTimeout(()=> {
+            cb("User data received")
+           
+           },1000)
+          
+    }
+
+    function fetchUserPosts(usermeassage){
+        console.log(usermeassage)
+        console.log("fetching user posts")
+        setTimeout(()=> {
+            console.log("User posts received")
+            console.log("All data loaded successfully!");
+        },1500)
+    }
+
+    fetchuserData(fetchUserPosts)
+</script>
+</body>
+</html>
