@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <button>Add Item</button>
+    <script>
+        let unorderlist = document.querySelector("ul")
+        let newButton = document.getElementsByTagName("button")
+        
+         newButton[0].addEventListener("click", function(){
+             let newli = document.createElement("li")
+             newli.textContent = "New Item"
+             newli.style.fontSize= "20px"
+             newli.style.color = "blue"
+             unorderlist.append(newli)
+             console.log(unorderlist)
+         })
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+       <h1 id="heading1">
+
+       </h1>
+      <p>This is para</p>
+      <p>This is para</p>
+      <p>This is para</p>
+    </div>
+
+    <script>
+  let heading = document.getElementById("heading1")
+  let ItemsPara = document.getElementsByTagName("p")
+  let Parentdiv = document.querySelector(".container")
+
+  heading.textContent= "Welcome to the DOM World!"
+  
+  for(let i=0; i<ItemsPara.length; i++){
+    ItemsPara[i].style.color = "blue"
+    
+  }
+  console.log(Parentdiv)
+  
+  Parentdiv.style.backgroundColor = "yellow"
+
+</script>
+</body>
+
+</html>
